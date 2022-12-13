@@ -23,7 +23,7 @@ p1.2=p1.1 + theme_classic(base_size = 16)+ theme(plot.margin = unit(c(1,0.5,0.5,
                                                  panel.grid.minor = element_blank())
 
 # conversion rate
-#    \u03bb   lambda ??
+#    \u03bb   lambda
 
 #library("ggpattern")
 dat_conversion <- read.table("WGBS_EMseq_conversion.txt",header=T)
@@ -140,10 +140,7 @@ p6.2=p6.1 + theme_classic(base_size = 16)+ theme(plot.margin = unit(c(0,1,0.5,0.
     panel.grid.minor = element_blank())
 
 
-
-
 # combined together
-
 library(ggpubr)
 theme_set(theme_pubr())
 library("gridExtra")
