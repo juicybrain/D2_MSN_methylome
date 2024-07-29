@@ -1,0 +1,1 @@
+for spl in `ls *gz.chr1415`; do bedtools intersect -sorted -f 1 -F 1 -wa -b chr14.chr15.mCA.bed -a ${spl} > fF/${spl}\.mCA.cov &  done
